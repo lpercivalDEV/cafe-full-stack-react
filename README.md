@@ -3,20 +3,24 @@ This is a full stack application that uses React that allows employees to login 
 
 ## Installation
 1. Open your terminal/shell
-2. Clone my repo by typing in `git clone https://github.com/lpercivalDEV/coffee-app-with-login.git`
+2. Clone my repo by typing: `https://github.com/lpercivalDEV/cafe-full-stack-react.git`
 3. run `npm install`
 
 ## Usage
-1. run `node server.js`
-2. Navigate to `localhost:8080`
+1. Open two terminals (or tabs)
+2. cd into `barista-auth` directory and run `node server.js`to start the application
+3. Navigate to `localhost:8080`
+
+4. cd into `client-side` directory and run `npm start` to start the react application
+5. Navigate to `localhost:3000`
 
 ## Credit
 Modified from Scotch.io's auth tutorial
 
 
-![alt tag]()
-![alt tag]()
-![alt tag]()
+![alt tag](https://github.com/lpercivalDEV/cafe-full-stack-react/blob/master/cafe-landing.png)
+![alt tag](https://github.com/lpercivalDEV/cafe-full-stack-react/blob/master/cafe-tracker.png)
+![alt tag](https://github.com/lpercivalDEV/cafe-full-stack-react/blob/master/cafe-react.png)
 
 ## How It's Made:
 
