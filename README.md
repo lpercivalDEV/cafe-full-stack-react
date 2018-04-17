@@ -28,7 +28,7 @@ Modified from Scotch.io's auth tutorial
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, Node.js, Mongodb, Express, Passport, EJS, React
+**Tech used:** HTML, CSS, JavaScript, Node.js, MongoDB, Express, Passport, EJS, React
 
 I created an application that allows coffee house employees to handle incoming orders.
 
