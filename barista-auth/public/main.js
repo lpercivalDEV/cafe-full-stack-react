@@ -1,8 +1,5 @@
 //What can the user see?
-
-
 //what can the user do?
-
 //what does the user expect?
 
 var thumbUp = document.getElementsByClassName("fa-thumbs-up"); //returns an array of dom objects

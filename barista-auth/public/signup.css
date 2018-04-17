@@ -1,0 +1,41 @@
+
+body{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 2;
+    background-color: #4D2119;
+    color: #D7A988;
+    font-size: 22px;
+}
+
+h1 {
+    text-align: center;
+    grid-column: 2;
+    grid-row-start: 1;
+
+}
+
+.signUpPic{
+    grid-column: 1;
+    grid-row: 1;
+    margin: 5%;
+    margin-top: 250px;
+}
+
+.photo{
+    grid-row: 1;
+    width: 80%;
+    height: auto;
+    margin-top: -15%;
+}
+
+.container{
+    grid-row: 1;
+    grid-column: 2;
+    width:90%;
+    margin: 6%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    background-color: #5C321F;
+    border-radius: 8px;
+}

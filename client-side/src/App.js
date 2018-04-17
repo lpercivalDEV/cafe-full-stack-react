@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './order.css';
 
 class App extends Component {
   state = {users: []}
@@ -21,11 +22,11 @@ class App extends Component {
       <div className="App">
         <h1>orders</h1>
         {this.state.users.map(user =>
-          <div key={user.name}>{user.order}</div>
+         // <div key={user.name}>{user.name}</div>
+          <div key={user.name}>  {user.order}</div>
         )}
       </div>
     );
   }
 }
-
 export default App;

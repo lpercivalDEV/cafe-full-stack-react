@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Barista Order Tracking</title>
+    <title>Order Tracker</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="font-awesome.min.css">
@@ -10,32 +10,30 @@
 <body class="profileBody">
   <header>
     <div class="box">
-        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
-        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+        <h1><span class="fa fa-coffee"></span> Order Tracker</h1>
     </div>
   </header>
 
 
         <!-- LOCAL INFORMATION -->
-            <div class="well">
-                <h3><span class="fa fa-user"></span> Local</h3>
-
+            <div class="user">
+                <h3><span class="fa fa-user"></span> Employee Login Info</h3>
+                <a href="/logout" class="btn btn-default btn-sm logout">Logout</a>
                 <% if (user.local.email) { %>
                     <p>
                         <strong>id</strong>: <%= user._id %><br>
                         <strong>email</strong>: <%= user.local.email %><br>
-                        <strong>password</strong>: <%= user.local.password %>
+                        <!-- <strong>password</strong>: <%= user.local.password %> -->
                     </p>
-
-                    <a href="/unlink/local" class="btn btn-default">Unlink</a>
+                    <h4>Warning - 'Delete Account' cannot be undone</h4>
+                    <a href="/unlink/local" class="btn btn-default delete">Delete Account</a>
                 <% } else { %>
                     <a href="/connect/local" class="btn btn-default">Connect Local</a>
                 <% } %>
-
             </div>
 
     <div class="drinks">
-      <h3>On The Fly</h3>
+      <h3>Menu</h3>
         <h4>Hot</h4>
         <ul class="menu">
           <li>Machiatto</li>
@@ -44,12 +42,15 @@
           <li>Double Espresso</li>
           <li>Cappucino</li>
           <li>Café Latte</li>
+          <li>Irish Coffee</li>
+          <li>Spanish Latte</li>
         </ul>
         <h4>Cold</h4>
         <ul>
           <li>Iced Coffee</li>
           <li>Iced Americano</li>
           <li>Cold Brew</li>
+          <li>Super-chilled Nitro Brew</li>
         </ul>
         </div>
 
@@ -78,22 +79,26 @@
           <input class="inCoffee" type="text" name="order" value="" placeholder="Enter Coffee Order">
           <button type="submit" name="button">Submit Order</button>
         </form>
-          <ul class="orders">
-          <% for(var i=0; i<orders.length; i++) {%>
-            <li class="order">
-              <span><%= orders[i].name %></span>
-              <span><%= orders[i].order %></span>
-              <span><%= orders[i].size %></span>
-              <span><%= orders[i].cream %></span>
-              <span><%= orders[i].milk %></span>
-              <span><%= orders[i].sugar %></span>
-              <span><i class="fa fa-trash" aria-hidden="true"></i></span>
-              <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
-            </li>
-          <% } %>
-          </ul>
     </section>
-<footer><h6>we spit in the coffee</h6></footer>
+
+    <div class="submitted">
+        <h3>Submitted Orders</h3>
+        <ul class="orders">
+        <% for(var i=0; i<orders.length; i++) {%>
+          <li class="order">
+            <span><%= orders[i].name %></span>
+            <span><%= orders[i].order %></span>
+            <span><%= orders[i].size %></span>
+            <span><%= orders[i].cream %></span>
+            <span><%= orders[i].milk %></span>
+            <span><%= orders[i].sugar %></span>
+            <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+            <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+          </li>
+        <% } %>
+        </ul>
+    </div>
+<footer><h6>All coffee is sustainably sourced, organically raised, cage-free, and not tested on animals</h6></footer>
 <script src="main.js"></script>
 
 </body>
