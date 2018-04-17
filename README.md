@@ -19,7 +19,11 @@ Modified from Scotch.io's auth tutorial
 
 
 ![alt tag](https://github.com/lpercivalDEV/cafe-full-stack-react/blob/master/cafe-landing.png)
+
+
 ![alt tag](https://github.com/lpercivalDEV/cafe-full-stack-react/blob/master/cafe-tracker.png)
+
+
 ![alt tag](https://github.com/lpercivalDEV/cafe-full-stack-react/blob/master/cafe-react.png)
 
 ## How It's Made:
