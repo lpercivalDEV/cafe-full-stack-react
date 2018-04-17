@@ -1,6 +1,16 @@
 body{
     background-color: black;
-    color: white;
+    color: black;
     font-size: 30px;
     text-align: center;
+}
+
+.App{
+    background-color: rgba(255,255,255,0.9);
+    padding-bottom: 40px;
+}
+
+.colorChange{
+    font-size: 42px;
+    color: lime;
 }
