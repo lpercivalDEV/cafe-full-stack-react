@@ -3,11 +3,11 @@ This is a full stack application that uses React that allows employees to login 
 
 ## Installation
 1. Open your terminal/shell
-2. Clone my repo by typing: `https://github.com/lpercivalDEV/cafe-full-stack-react.git`
-3. run `npm install`
+2. Clone my repo by typing: `git clone https://github.com/lpercivalDEV/cafe-full-stack-react.git`
+3. cd into project directory and run `npm install`
 
 ## Usage
-1. Open two terminals (or tabs)
+1. Open two terminals (or terminal tabs)
 2. cd into `barista-auth` directory and run `node server.js`to start the application
 3. Navigate to `localhost:8080`
 
